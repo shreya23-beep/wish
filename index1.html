@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Celebration</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background: #f0f2f5;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            max-width: 450px;
+            width: 100%;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        /* Image Styling */
+        .profile-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover; /* This keeps the image from stretching */
+            border-bottom: 5px solid #ff477e;
+        }
+
+        .content { padding: 30px; }
+
+        h1 { color: #ff477e; margin-bottom: 10px; }
+
+        /* Music Player Styling */
+        .music-container {
+            background: #fff0f3;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 15px;
+        }
+        
+        audio {
+            width: 100%;
+            height: 35px;
+        }
+
+        .details { margin-bottom: 25px; line-height: 1.6; }
+        
+        .rsvp-btn {
+            background: #ff477e;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=500&q=80" 
+             alt="Birthday Guest of Honor" 
+             class="profile-img">
+
+        <div class="content">
+            <h1>Alex's 25th!</h1>
+            <p>You're invited to the party of the year!</p>
+
+            <div class="music-container">
+                <p style="font-size: 0.8rem; margin-bottom: 5px; color: #ff477e;">🎵 Play Birthday Vibes</p>
+                <audio controls>
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="details">
+                <p><strong>Where:</strong> 742 Evergreen Terrace</p>
+                <p><strong>When:</strong> April 12th @ 8:00 PM</p>
+            </div>
+
+            <a href="#" class="rsvp-btn">I'll Be There!</a>
+        </div>
+    </div>
+
+</body>
+</html>
